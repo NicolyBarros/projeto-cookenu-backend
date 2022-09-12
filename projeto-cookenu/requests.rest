@@ -1,0 +1,54 @@
+### Endpoint de teste
+GET http://localhost:3003/ping
+
+### Signup
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{
+    "nickname": "Nick",
+    "email": "nicoly@gmail.com",
+    "password": "abc123"
+}
+
+### Login
+POST http://localhost:3003/users/login
+Content-Type: application/json
+
+{
+    "email": "astrodev@gmail.com",
+    "password": "bananinha"
+}
+
+### Get all recipes
+GET http://localhost:3003/recipes?search=bi
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA3ZTg5ZDQ0LWUxZTUtNDM3Ny1iNjVhLWZiY2FkMTVlMjE1NSIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NTk1NTU0NTMsImV4cCI6MTY1OTY0MTg1M30.SIol-kxhW7acShGQbfvS7ADAmxf5bk-_FmQL94xAFMo
+
+
+### Create recipe
+POST http://localhost:3003/recipes
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk3YzFkN2VlLWU2MzktNDk3MS04YTA0LWQ2Mjk3YzEyNzM3MiIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NTk2MzEwNDAsImV4cCI6MTY1OTcxNzQ0MH0.xKY8IFEv33UZv15pYRnyFHMk5_OxQDNF0vRLEHaSFRg
+Content-Type: application/json
+
+{
+    "title": "lasanha",
+    "description": "Testando de novo esse endpoint"
+}
+
+### Edit recipe
+PUT http://localhost:3003/recipes/a248813a-551c-4c1d-a661-36792e91e32b
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJiOWI3ZWU4LWFlNGItNGJkMS05YmQ2LWU3ZTIxNTk0Mzk5YiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1OTYzMTc4OCwiZXhwIjoxNjU5NzE4MTg4fQ._7KxdGna7Nx9o45Y3SKAfG6ut-ZaQFXsDTelOMXuQDA
+Content-Type: application/json
+
+{
+    "title": "Testando",
+    "description": "testando a edição de endpoint"
+}
+
+### Delete recipe
+DELETE http://localhost:3003/recipes/a248813a-551c-4c1d-a661-36792e91e32b
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJiOWI3ZWU4LWFlNGItNGJkMS05YmQ2LWU3ZTIxNTk0Mzk5YiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1OTYzMTc4OCwiZXhwIjoxNjU5NzE4MTg4fQ._7KxdGna7Nx9o45Y3SKAfG6ut-ZaQFXsDTelOMXuQDA
+
+### Delete user
+DELETE http://localhost:3003/users/97c1d7ee-e639-4971-8a04-d6297c127372
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJiOWI3ZWU4LWFlNGItNGJkMS05YmQ2LWU3ZTIxNTk0Mzk5YiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY1OTYzMTc4OCwiZXhwIjoxNjU5NzE4MTg4fQ._7KxdGna7Nx9o45Y3SKAfG6ut-ZaQFXsDTelOMXuQDA
