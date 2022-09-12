@@ -1,5 +1,6 @@
 # Projeto Cookenu
 - Projeto proposto para praticar programação orientada a objetos. 
+- CRUD (Create, Read, Update, Delete) completo.
 
 ## API - Postman
 - link: https://documenter.getpostman.com/view/20786077/VUjLLnSK
